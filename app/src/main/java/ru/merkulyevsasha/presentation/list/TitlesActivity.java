@@ -1,5 +1,6 @@
 package ru.merkulyevsasha.presentation.list;
 
+import android.content.Intent;
 import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -19,6 +20,7 @@ import ru.merkulyevsasha.AutoTestApp;
 import ru.merkulyevsasha.data.HttpTitlesService;
 import ru.merkulyevsasha.model.TitleItem;
 import ru.merkulyevsasha.presentation.R;
+import ru.merkulyevsasha.presentation.details.TitleFragmentActivity;
 
 
 public class TitlesActivity extends AppCompatActivity implements TitlesView {
@@ -56,6 +58,11 @@ public class TitlesActivity extends AppCompatActivity implements TitlesView {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Intent intent = new Intent(TitlesActivity.this, TitleFragmentActivity.class);
+                intent.putExtra(TitleFragmentActivity.KEY_POSITION, position);
+                startActivity(intent);
+
             }
         });
 
