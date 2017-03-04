@@ -13,7 +13,7 @@ import java.util.Collection;
 import java.util.List;
 
 import ru.merkulyevsasha.model.TitleItem;
-import ru.merkulyevsasha.presentation.R;
+import ru.merkulyevsasha.R;
 
 class TitlesViewAdapter extends ArrayAdapter<TitleItem> {
 

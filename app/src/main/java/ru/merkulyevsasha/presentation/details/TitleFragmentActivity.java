@@ -15,7 +15,7 @@ import javax.inject.Inject;
 
 import ru.merkulyevsasha.AutoTestApp;
 import ru.merkulyevsasha.model.TitleItem;
-import ru.merkulyevsasha.presentation.R;
+import ru.merkulyevsasha.R;
 import ru.merkulyevsasha.presentation.list.TitlesPresenter;
 
 

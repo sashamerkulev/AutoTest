@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
 
 import ru.merkulyevsasha.model.TitleItem;
-import ru.merkulyevsasha.presentation.R;
+import ru.merkulyevsasha.R;
 
 
 public class TitlePageFragment extends Fragment {
