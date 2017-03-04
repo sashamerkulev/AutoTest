@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/main_content"
-    tools:context="ru.merkulyevsasha.presentation.TitlesActivity">
+    tools:context="ru.merkulyevsasha.presentation.list.TitlesActivity">
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh"

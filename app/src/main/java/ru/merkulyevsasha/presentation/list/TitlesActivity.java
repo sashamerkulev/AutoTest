@@ -144,6 +144,7 @@ public class TitlesActivity extends AppCompatActivity implements TitlesView {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
+                mListAdaper.clear();
                 mListAdaper.addAll(titles);
                 mListAdaper.notifyDataSetChanged();
             }
