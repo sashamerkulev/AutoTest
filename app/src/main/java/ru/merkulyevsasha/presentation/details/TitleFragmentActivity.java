@@ -23,9 +23,6 @@ public class TitleFragmentActivity extends FragmentActivity {
 
     public static final String KEY_POSITION = "position";
 
-    private ViewPager pager;
-    private PagerAdapter pagerAdapter;
-
     @Inject
     TitlesPresenter pres;
 
@@ -36,8 +33,8 @@ public class TitleFragmentActivity extends FragmentActivity {
 
         ((AutoTestApp)getApplication()).getComponent().inject(this);
 
-        pager = (ViewPager) findViewById(R.id.pager);
-        pagerAdapter = new TitlesFragmentPagerAdapter(pres.getLastResponse(), getSupportFragmentManager());
+        ViewPager pager = (ViewPager) findViewById(R.id.pager);
+        PagerAdapter pagerAdapter = new TitlesFragmentPagerAdapter(pres.getLastResponse(), getSupportFragmentManager());
         pager.setAdapter(pagerAdapter);
 
         Intent intent = getIntent();
